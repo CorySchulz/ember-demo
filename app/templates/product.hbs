@@ -1,0 +1,31 @@
+{{page-title "Product"}}
+
+<div class="py-5 px-10" >
+
+	<div>
+
+		<img src="{{ @model.images.0.src }}"
+			class="w-[400px] pb-2" 
+		  loading="lazy" />
+
+
+		<h1 class="font-bold text-xl py-2" >
+			{{ @model.title }}
+		</h1>
+
+		<p>
+			{{ @model.vendor }}
+		</p>
+
+		<p>
+			${{ @model.variants.0.price }}
+		</p>
+
+	</div>
+
+
+</div>
+
+
+
+{{outlet}}

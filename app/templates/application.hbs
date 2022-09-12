@@ -1,0 +1,29 @@
+
+{{page-title "EmberDemo"}}
+
+
+<div class="" >
+
+	<h1 class="pl-10 py-5 text-xl font-bold mb-0" >
+		Ember Demo
+	</h1>
+
+	<nav class="py-4 px-10 bg-blue-900 uppercase" >
+		<LinkTo 
+			@route="collection" 
+			@model="fragrances" 
+			class="pr-4 font-bold leading-3 opacity-70 hover:opacity-100 text-white" >
+			Fragrances
+		</LinkTo>
+
+		<LinkTo 
+			@route="product" 
+			@model="volcano" 
+			class="pr-4 font-bold leading-3 opacity-70 hover:opacity-100 text-white">
+			Volcano
+		</LinkTo>
+	</nav>
+
+</div>
+
+{{outlet}}
